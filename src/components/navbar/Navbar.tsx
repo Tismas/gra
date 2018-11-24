@@ -3,7 +3,7 @@ import ScratchCard from '../scratch-card/ScratchCard';
 import './navbar.css';
 
 class Nav extends React.Component {
-  public render() {
+  render() {
     return (
       <div className="navbar">
         <ScratchCard />
