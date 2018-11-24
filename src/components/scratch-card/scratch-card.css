@@ -3,4 +3,13 @@
   height: 70px;
   background-color: green;
   text-align: center;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+.scratch-card-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }

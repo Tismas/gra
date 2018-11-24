@@ -15,7 +15,7 @@ const ScratchCard = () => {
       className="scratch-card">
       {
         isVisible
-        ? <img src="http://placehold.jp/50x50.png" />
+        ? <img className="scratch-card-image" src="http://placehold.jp/70x70.png" />
         : 'SCRATCH'
       }
     </button>
