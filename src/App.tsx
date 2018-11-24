@@ -5,7 +5,7 @@ import Map from './components/map/Map';
 import Navbar from './components/navbar/Navbar';
 
 class App extends React.Component {
-  public render() {
+  render() {
     return (
       <div className="App">
         <Navbar />
