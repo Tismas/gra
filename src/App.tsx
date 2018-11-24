@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './App.css';
 
-import Map from './components/map/Map.jsx';
-import Navbar from './components/navbar/Navbar.jsx';
+import Map from './components/map/Map';
+import Navbar from './components/navbar/Navbar';
 
 class App extends React.Component {
   public render() {
