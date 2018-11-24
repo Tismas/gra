@@ -4,4 +4,6 @@
   background-color: #ffe140;
   padding: 10px;
   box-sizing: border-box;
+  position: absolute;
+  width: 100%;
 }
