@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './App.css';
 
-import Map from './components/map/Map';
 import Navbar from './components/navbar/Navbar';
+import Map from './views/map/Map';
 
 class App extends React.Component {
   render() {
