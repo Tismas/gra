@@ -1,12 +1,10 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+
+import map from "./Selection_011.png";
 
 class Map extends Component {
   render() {
-    return (
-      <div>
-        Map
-      </div>
-    )
+    return <img src={map} />;
   }
 }
 
