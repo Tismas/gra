@@ -1,5 +1,6 @@
 .scratch-wrapper {
   position: relative;
+  height: 150px;
 }
 
 .scratch-overlay {
@@ -13,4 +14,13 @@
 .scratch-icon-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+.active-scratch-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33%;
+  height: auto;
+  border: 2px solid blue;
 }
