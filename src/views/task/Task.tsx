@@ -5,8 +5,11 @@ import ScratchArea from './item/ScratchArea';
 import TrackBar from './item/TrackBar';
 
 interface IProps {
-  readonly prize: number;
-  readonly image: string;
+  distance: number,
+  prize: number;
+  image: string;
+  calculatedWidth: number,
+  handleChangeWidth(): void;
 }
 
 const Task = (props:IProps) => {
@@ -19,7 +22,10 @@ const Task = (props:IProps) => {
           <p>{`Find ${props.image} beneath the scratch area and won ${props.prize}zl!`}</p>
           <TrackBar progress={60} />
           <Notification message="Wisisz mi hajs szmato" />
-          <ScratchArea />
+          <ScratchArea
+            distance={props.distance}
+            handleChangeWidth={props.handleChangeWidth}
+            calculatedWidth={props.calculatedWidth} />
           {
             <div className="more-actions">
               <Button label="Try again" />

@@ -3,6 +3,7 @@
   height: 150px;
   display: flex;
   align-items: center;
+  flex-direction: row-reverse;
 }
 
 .scratch-overlay {
@@ -19,14 +20,17 @@
   justify-content: space-around;
 }
 
-.active-scratch-part {
+.scratch-part {
   position: absolute;
   top: 0;
   left: 0;
-  width: 33%;
-  border: 2px solid #64de38;
+  width: 107px;
   bottom: 0;
   border-radius: 8px;
+  border: 2px solid transparent
+}
+
+.active-scratch-part {
   animation: pulse 2s infinite;
 }
 
