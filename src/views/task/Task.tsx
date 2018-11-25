@@ -5,23 +5,22 @@ import ScratchArea from './item/ScratchArea';
 import TrackBar from './item/TrackBar';
 
 interface IProps {
-  readonly prize:number;
-  readonly image:string
+  readonly prize: number;
+  readonly image: string;
 }
 
 const Task = (props:IProps) => {
-  console.log('render', props);
   return (
     <div className="task">
       <h3 className="ribbon">Scratch card for today</h3>
       <section className="task-scratch-section">
         <div className="daily-task-wrapper">
-          <img className="task-icon" src="http://placehold.jp/70x70.png" alt=""/>
-          <p>{`Znajdź ${props.image} pod warstwą ścierną i wygraj ${props.prize}`}</p>
+          <img className="task-icon" src={require(`../../assets/images/${props.image}.png`)} alt={props.image}/>
+          <p>{`Find ${props.image} beneath the scratch area and won ${props.prize}zl!`}</p>
           <TrackBar progress={60} />
           <Notification message="Wisisz mi hajs szmato" />
           <ScratchArea />
-          <Button label="Spróbuj jeszcze raz" />
+          <Button label="Try again" />
         </div>
       </section>
     </div>

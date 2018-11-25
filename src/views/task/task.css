@@ -8,30 +8,47 @@
 
 .track-wrapper {
   width: 100%;
-  background-color: gray;
+  background-color: #c6c2c2;
   display: block;
   height: 20px;
   border-radius: 50px;
   position: relative;
+  margin-bottom: 30px;
+  border: 1px solid #c6c2c2;
 }
 .track-wrapper::before {
   content: '0 m';
   display: block;
   position: absolute;
   left: 0;
-  bottom: - 20px;
+  bottom: -100%;
+  font-size: 12px
 }
 .track-wrapper::after {
   content: '1000 m';
   display: block;
   position: absolute;
   right: 0;
-  bottom: - 20px;
+  bottom: -100%;
+  font-size: 12px
+}
+
+.track::after {
+  content: '';
+  background-image: url('../../assets/images/track-marker.png');
+  display: block;
+  width: 20px;
+  height: 100%;
+  top: -110%;
+  position: absolute;
+  right: -10px;
+  background-size: contain;
 }
 
 .task-icon {
-  margin: 0 auto;
+  margin: 30px auto 10px;
   display: block;
+  max-width: 65px;
 }
 
 .task-message {
@@ -48,8 +65,12 @@
   display: block;
   position: absolute;
   width: 50%;
-  background-color: #ffe140;
+  background-color: #ffffff;
   height: 20px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-radius: 8px;
+}
+
+.daily-task-wrapper p {
+  font-weight: bold;
+  margin-bottom: 40px;
 }

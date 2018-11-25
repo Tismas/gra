@@ -14,7 +14,7 @@ const ScratchList = asyncComponent({
   resolve: () => import('./views/scratch-list/ScratchList'),
 });
 const TaskWrapper = asyncComponent({
-  resolve: () => import('./views/task/Task'),
+  resolve: () => import('./views/task/TaskWrapper'),
 });
 const PageNotFound = asyncComponent({
   resolve: () => import('./views/404/PageNotFound'),

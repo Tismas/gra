@@ -1,18 +1,14 @@
-import * as React from 'react';
-import Task from './Task';
-import './task.css';
+import * as React from "react";
+import Task from "./Task";
+import "./task.css";
 
 const mock = {
-  image: 'elephant',
+  image: "elephant",
   prize: 45000
-}
+};
 
 const TaskWrapper = () => {
-  return(
-    <Task
-      prize={mock.prize}
-      image={mock.image} />
-  );
-}
+  return <Task prize={mock.prize} image={mock.image} />;
+};
 
 export default TaskWrapper;

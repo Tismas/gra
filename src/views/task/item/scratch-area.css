@@ -1,0 +1,16 @@
+.scratch-wrapper {
+  position: relative;
+}
+
+.scratch-overlay {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 8px;
+}
+
+.scratch-icon-wrapper {
+  display: flex;
+  justify-content: space-between;
+}

@@ -11,4 +11,6 @@ body {
   padding: 10px;
   box-sizing: border-box;
   font-weight: 100;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
