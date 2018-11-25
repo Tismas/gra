@@ -1,12 +1,16 @@
-// import * as React from 'react';
-// import './button.css';
+import * as React from 'react';
+import './button.css';
 
-// const Button = ({ label }) => {
-//   return (
-//     <button className="button">
-//       {label}
-//     </button>
-//   )
-// }
+interface IProps {
+  label: string;
+}
 
-// export default Button;
+const Button = (props:IProps) => {
+  return (
+    <button className="button">
+      {props.label}
+    </button>
+  )
+}
+
+export default Button;

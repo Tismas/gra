@@ -1,0 +1,21 @@
+.task-scratch-section {
+  padding: 0 20px;
+}
+
+.track-wrapper {
+  width: 100%;
+  background-color: gray;
+  display: block;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.track {
+  display: block;
+  position: absolute;
+  width: 50%;
+  background-color: red;
+  height: 20px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
