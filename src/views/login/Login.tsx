@@ -67,6 +67,10 @@ const Login = () => {
     scratchEffect(canvas, ctx);
   });
 
+  setTimeout(() => {
+    window.location.replace('/map');
+  }, 3000);
+
   return (
     <>
       <Logo>Scralk</Logo>
