@@ -1,0 +1,7 @@
+.notif-message {
+  background-color: #00800052;
+  padding: 20px;
+  border-radius: 8px;
+  color: green;
+  border: 1px solid green;
+}

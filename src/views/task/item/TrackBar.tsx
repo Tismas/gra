@@ -1,11 +1,15 @@
 import * as React from 'react';
 import '../task.css';
 
-const TrackBar = () => {
+interface IProps {
+  progress:number;
+}
+
+const TrackBar = (props:IProps) => {
   return (
     <div className="track-wrapper">
       <span className="track">
-        <span className="track-progress" />
+        <span style={{width: `${props.progress}`}} className="track-progress" />
       </span>
     </div>
   )

@@ -13,7 +13,7 @@ const Map = asyncComponent({
 const ScratchList = asyncComponent({
   resolve: () => import('./views/scratch-list/ScratchList'),
 });
-const Task = asyncComponent({
+const TaskWrapper = asyncComponent({
   resolve: () => import('./views/task/Task'),
 });
 const PageNotFound = asyncComponent({
@@ -31,7 +31,7 @@ class App extends React.Component {
         <Route exact={true} path="/" render={redirectToLogin} />
         <Route path="/login" component={Login} />
         <Route path="/map" component={Map} />
-        <Route path="/task" component={Task} />
+        <Route path="/task" component={TaskWrapper} />
         <Route path="/scratch-list" component={ScratchList} />
 
         <Route component={PageNotFound} />
