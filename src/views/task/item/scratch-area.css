@@ -1,6 +1,8 @@
 .scratch-wrapper {
   position: relative;
   height: 150px;
+  display: flex;
+  align-items: center;
 }
 
 .scratch-overlay {
@@ -13,7 +15,8 @@
 
 .scratch-icon-wrapper {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .active-scratch-part {
@@ -21,6 +24,24 @@
   top: 0;
   left: 0;
   width: 33%;
-  height: auto;
-  border: 2px solid blue;
+  border: 2px solid #64de38;
+  bottom: 0;
+  border-radius: 8px;
+  animation: pulse 2s infinite;
+}
+
+.more-actions {
+  margin-top: 20px;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: #64de38;
+  }
+  50% {
+    border-color: #518c3c;
+  }
+  100% {
+    border-color: #64de38;
+  }
 }

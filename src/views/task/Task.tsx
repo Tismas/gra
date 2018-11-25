@@ -20,7 +20,12 @@ const Task = (props:IProps) => {
           <TrackBar progress={60} />
           <Notification message="Wisisz mi hajs szmato" />
           <ScratchArea />
-          <Button label="Try again" />
+          {
+            <div className="more-actions">
+              <Button label="Try again" />
+              <p className="try-again">Or walk into another are and try for free.</p>
+            </div>
+          }
         </div>
       </section>
     </div>
